@@ -1,4 +1,4 @@
-/* added font color to universal selector */
+/* reset overall CSS */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -6,27 +6,30 @@
     color: #ffffff;
 }
 
+/* set background color for whole website */
 body {
     background-color: #d9dcd6;
 }
 
+/* Sets font family and background color for the top banner/navbar and adds padding */
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
 }
 
+/* Increases the font size of the company name in the banner and makes it display inline-block */
 header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
-/* only need to select .seo class */
+/* changes the font color of the letters 'seo' in the banner */
 .seo { 
     color: #d9dcd6;
 }
 
-/* changed this selector to nav */
+/* sets the font for the navbar in the banner, floats it to the right side of the header and adds margin/padding */
 nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -35,26 +38,29 @@ nav {
     font-size: 20px;
 }
 
-/* changed this selector to ul nested in nav*/
+/* removes bullets from navbar list items */
 nav ul {
     list-style-type: none;
 }
 
-/* changed this selector to li nested in ul nested in nav  */
+/* makes list items display in a row and adds left margin  */
 nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
+/* removes underlines on the navbar links */
 a {
     text-decoration: none;
 }
 
+/* sets font size of the p tags throughout the page */
 p {
     font-size: 16px;
 }
 
-/* this is the image under the header */
+/* sets the height of the div container to 800px and the width to fill the page. */
+/* Links an image to be the background, makes the image fill the div container and centers it */
 .hero {
     height: 800px;
     width: 100%;
@@ -64,24 +70,27 @@ p {
     background-position: center;
 }
 
+/* floats elements with this class to the left and adds right margin */
 .float-left {
     float: left;
     margin-right: 25px;
 }
 
+/* floats elements with this class to the right and adds left margin */
 .float-right {
     float: right;
     margin-left: 25px;
 }
 
-/* this is the main's class */
+/* sets the main 3 content sections of the page to fill 75% of the body, display in a column and add left margin */
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
-/* this is the aside element class */
+/* sets the sidebar container to fill 20% of the body width, 100% of the body height, floats it to the right */
+/* sets the font, background color and adds margin and padding */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -93,25 +102,26 @@ p {
     background-color: #2589bd;
 }
 
-/* this is the class for the section elements in the aside element */
+/* this adds bottom margin to the sections in the sidebar */
 .benefit-lead {
     margin-bottom: 32px;
 }
 
-/* these 3 h3's are the same */
+/* centers the headings of the sections in the sidebar and add bottom margin */
 .benefit-lead h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-/* these three img's are the same */
+/* set the images in the sidebar to have a max-width of 150px, display in block and sets top/bottom margin to 10px
+    and the left/right margins to auto */
 .benefit-lead img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-/* consolidated the classes of the sections in main element to a single class */
+/* sets the main sections font and background color, adds margin and padding, and sets the height to 300px */
 .main-content {
     margin-bottom: 20px;
     padding: 50px;
@@ -120,17 +130,18 @@ p {
     background-color: #0072bb;
 }
 
-/* removed redundant css for the images in the main element */
+/* sets the images in the main sections to a max-height of 200px */
 .main-content img {
     max-height: 200px;
 }
 
-/* removed redundant css for the h2 text in the main element */
+/* sets the font size of the headings in the main sections and adds bottom margin */
 .main-content h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
+/* sets the footer font, centers it and adds padding */
 footer {
     padding: 30px;
     clear: both;
@@ -138,10 +149,12 @@ footer {
     text-align: center;
 }
 
+/* makes the heading in the footer larger */
 footer h2 {
     font-size: 20px;
 }
 
+/* makes font in the footer black */
 .black {
     color: black;
 }
